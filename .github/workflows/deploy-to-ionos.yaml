@@ -26,7 +26,30 @@ on:
 concurrency: ${{ github.ref }}
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      build-artifact: ${{ steps.build.outputs.artifact-path }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: pnpm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Build project
+        id: build
+        run: pnpm run build
+
   deploy-to-ionos:
+    needs: build
     if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
