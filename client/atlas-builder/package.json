@@ -2,7 +2,7 @@
   "name": "atlas-builder",
   "main": "main.ts",
   "scripts": {
-    "build": "node --experimental-transform-types --no-warnings atlasBuilder.ts"
+    "build": "tsx --no-warnings atlasBuilder.ts"
   },
   "dependencies": {
     "canvas": "^3.1.0",
