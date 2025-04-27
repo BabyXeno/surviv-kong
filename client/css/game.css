@@ -893,7 +893,7 @@ img {
 
 #ui-stats-logo {
   /* Game over logo, don't forget there's main menu logo in app.css */
-  background-image: url("/img/surviv_logo_full.png");
+  background-image: url("/img/banner.png");
   background-repeat: no-repeat;
   /* In case of logo change, update this value to width divided by 3 ceiled  */
   background-size: 264px;
