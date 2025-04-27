@@ -363,7 +363,7 @@ const BoostDefs: Record<string, BoostDef> = {
         name: "Pulse Box",
         type: "boost",
         useTime: 0.2,
-        boost: 25,
+        boost: 0.0,
         lootImg: {
             sprite: "loot-pulseBox.img",
             tint: 0xffffff,

@@ -10,7 +10,6 @@
     "dev:api": "cd server && pnpm dev:api",
     "dev:game": "cd server && pnpm dev:game",
     "dev:client": "cd client && pnpm dev",
-    "build": "pnpm -r build",
     "stressTest": "cd server && pnpm stressTest",
     "lint": "biome check --write",
     "lint:ci": "biome check"

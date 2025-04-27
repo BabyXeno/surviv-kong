@@ -1044,9 +1044,8 @@ const BaseDefs: Record<string, MeleeDef> = {
         },
     },
     lasr_swrd: {
-        name: "Green Saber",
+        name: "Lasr Swrd",
         type: "melee",
-        rarity: 3,
         quality: 1,
         armorPiercing: true,
         stonePiercing: true,
@@ -1342,14 +1341,10 @@ const SkinDefs: Record<string, MeleeDef> = {
         },
     }),
     lasr_swrd_02: defineMeleeSkin("lasr_swrd", {
-        name: "Blue Saber",
-        rarity: 3,
         lootImg: { sprite: "loot-melee-lasr-sword-02.img" },
         worldImg: { sprite: "lasr-sword-02.img" },
     }),
     lasr_swrd_03: defineMeleeSkin("lasr_swrd", {
-        name: "Red Saber",
-        rarity: 3,
         lootImg: { sprite: "loot-melee-lasr-sword-03.img" },
         worldImg: { sprite: "lasr-sword-03.img" },
     }),
