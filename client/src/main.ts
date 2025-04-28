@@ -240,20 +240,18 @@ class Application {
             });
             const r = $("#news-current").data("date");
             const a = new Date(r).getTime();
-$(".right-column-toggle").on("click", () => {
-    if (this.newsDisplayed) {
-        $("#news-wrapper").hide();
-        $("#pass-wrapper").show();
-        // Force reflow to fix display issues
-        void $("#pass-wrapper")[0].offsetHeight;
-    } else {
-        this.config.set("lastNewsTimestamp", a);
-        $(".news-toggle").find(".account-alert").css("display", "none");
-        $("#news-wrapper").show();
-        $("#pass-wrapper").hide();
-    }
-    this.newsDisplayed = !this.newsDisplayed;
-});
+            $(".right-column-toggle").on("click", () => {
+                if (this.newsDisplayed) {
+                    $("#news-wrapper").fadeOut(250);
+                    $("#pass-wrapper").fadeIn(250);
+                } else {
+                    this.config.set("lastNewsTimestamp", a);
+                    $(".news-toggle").find(".account-alert").css("display", "none");
+                    $("#news-wrapper").fadeIn(250);
+                    $("#pass-wrapper").fadeOut(250);
+                }
+                this.newsDisplayed = !this.newsDisplayed;
+            });
             const i = this.config.get("lastNewsTimestamp")!;
             if (a > i) {
                 $(".news-toggle").find(".account-alert").css("display", "block");
