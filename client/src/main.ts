@@ -243,12 +243,18 @@ class Application {
             $(".right-column-toggle").on("click", () => {
                 if (this.newsDisplayed) {
                     $("#news-wrapper").fadeOut(250);
-                    $("#pass-wrapper").fadeIn(250);
+                    $("#pass-wrapper").fadeIn(250).css({
+                        opacity: 1,
+                        "z-index": 1000,
+                    });
                 } else {
                     this.config.set("lastNewsTimestamp", a);
                     $(".news-toggle").find(".account-alert").css("display", "none");
                     $("#news-wrapper").fadeIn(250);
-                    $("#pass-wrapper").fadeOut(250);
+                    $("#pass-wrapper").fadeOut(250).css({
+                        opacity: 0,
+                        "z-index": 0,
+                    });
                 }
                 this.newsDisplayed = !this.newsDisplayed;
             });
