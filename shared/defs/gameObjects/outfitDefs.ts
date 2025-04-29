@@ -75,6 +75,7 @@ const SkinDefs: Record<string, OutfitDef> = {
         lootImg: {
             sprite: "loot-shirt-outfitBase.img",
             tint: 0xffffff,
+            scale: 0.07,
         },
     }),
     outfitDemo: defineOutfitSkin("outfitBase", {
