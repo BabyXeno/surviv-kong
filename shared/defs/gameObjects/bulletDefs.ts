@@ -27,8 +27,8 @@ function defineBulletSkin(baseType: string, params: Partial<BulletDef>) {
 export const BaseDefs: Record<string, BulletDef> = {
     bullet_mp5: {
         type: "bullet",
-        damage: 1111111111111111111,
-        obstacleDamage: 100000000000000000000000000000000,
+        damage: 111111111,
+        obstacleDamage: 1000000,
         falloff: 0.8,
         distance: 10000,
         speed: 285,
