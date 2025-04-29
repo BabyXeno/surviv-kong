@@ -7,4 +7,5 @@ export enum MapId {
     Savannah = 5,
     Halloween = 6,
     Cobalt = 7,
+    May = 8,
 }
