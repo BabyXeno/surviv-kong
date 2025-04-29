@@ -29,9 +29,9 @@ export function getConfig(isProduction: boolean, dir: string) {
         },
         regions: {},
         modes: [
-            { mapName: "may", teamMode: TeamMode.Solo, enabled: true },
-            { mapName: "cobalt", teamMode: TeamMode.Duo, enabled: true },
-            { mapName: "potato", teamMode: TeamMode.Squad, enabled: true },
+            { mapName: "potato", teamMode: TeamMode.Solo, enabled: true },
+            { mapName: "may", teamMode: TeamMode.Duo, enabled: true },
+            { mapName: "main", teamMode: TeamMode.Squad, enabled: true },
         ],
         clientTheme: "main",
         gameTps: 100,
