@@ -64,12 +64,15 @@ const mapDef: PartialMapDef = {
     },
     lootTable: {
         tier_space: [
-            { name: "lasr_swrd", count: 1, weight: 0.29 },
-            { name: "lasr_swrd_02", count: 1, weight: 0.15 },
-            { name: "lasr_swrd_03", count: 1, weight: 0.15 },
+            { name: "", count: 1, weight: 0.29 },
+            { name: "_02", count: 1, weight: 0.15 },
+            { name: "_03", count: 1, weight: 0.15 },
             { name: "lasr_gun", count: 1, weight: 0.27 },
             { name: "lasr_gun_dual", count: 1, weight: 0.16 },
             { name: "pulseBox", count: 2, weight: 0.20},
+        ],
+        tier_ring_case: [
+            { name: "m134", count: 1, weight: 1 },
         ]
     }
 };

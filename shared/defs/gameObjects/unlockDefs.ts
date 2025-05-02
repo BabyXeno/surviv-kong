@@ -128,6 +128,7 @@ const _allowedEmotes = [
     "emote_upsidedownface",
     "emote_teabag",
     "emote_alienface",
+    //"emote_boffy",
     "emote_flagbelarus",
     "emote_flagbelgium",
     "emote_flagkazakhstan",

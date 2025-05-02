@@ -253,6 +253,16 @@ export const EmotesDefs: Record<string, EmoteDef> = {
         teamOnly: false,
         category: EmoteCategory.Faces,
     },
+    //emote_boffy: {
+      //  type: "emote",
+        //name: "boffy",
+        //rarity: 1,
+        //texture: "face-boffy.img",
+        //sound: "emote_01",
+        //channel: "ui",
+        //teamOnly: false,
+        //category: EmoteCategory.Faces,
+    //},
     emote_happyface: {
         type: "emote",
         name: "Happy Face",
